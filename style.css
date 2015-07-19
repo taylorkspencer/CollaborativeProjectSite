@@ -1,0 +1,474 @@
+/* Fonts */
+@font-face
+{
+	font-family: 'Gentium Basic';
+	src: url('gentium-basic.eot') format('eot'),
+		url('gentium-basic.woff') format('woff');
+}
+@font-face
+{
+	font-family: 'DejaVu Sans';
+	src: url('dejavu-sans.eot') format('eot'),
+		url('dejavu-sans.woff') format('woff');
+}
+
+/* Document styles */
+body
+{
+	margin: 12px 12px 12px 12px;
+}
+hr
+{
+	border: 1px solid #555753;
+	clear: both;
+}
+/* Styles for the header pane */
+#header
+{
+	display: inline-block;
+	clear: both;
+	background-color: #eeeeec;
+	width: 100%;
+	border: 1px solid #888a85;
+	font-family: 'Gentium Basic', serif;
+	margin: 0px 0px 25px 0px;
+}
+#header .primary
+{
+	display: inline-block;
+	font-size: 36pt;
+	margin: 10px 0px 20px 4px;
+	text-shadow: 2px 2px 1px #999999;
+}
+/* For the navigation menu */
+#header #links
+{
+	display: block;
+	margin: 0px 0px 0px 0px;
+	position: relative;
+	float: left;
+	font-size: 14pt;
+	padding: 0px 0px 0px 0px;
+	background-color: #729fcf;
+	border: 1px solid #3465a4;
+	width: 100%;
+	width: expression(this.parentNode.clientWidth-2);
+	width: calc(100% - 2px);
+}
+#header #links li
+{
+	display: table-cell;
+	*display: inline;
+	background-color: #ccccff;
+	border: 1px solid #3465a4;
+	padding: 2px 12px 2px 12px;
+	list-style-type: none;
+}
+#header #links a
+{
+	color: black;
+	text-decoration: none;
+}
+#header #links a:hover
+{
+	text-decoration: underline;
+}
+#header #links a.here
+{
+	font-weight: bold;
+}
+/* For sub-menus of the navigation menu */
+#header #links ul
+{
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: expression(this.parentNode.offsetLeft+13);
+	margin: 0px 0px 0px -14px;
+	font-size: 14pt;
+	padding: 0px 0px 0px 0px;
+	background-color: #729fcf;
+	border: 1px solid #3465a4;
+}
+#header #links li:hover ul, #header #links li ul:hover
+{
+	display: table;
+	*display: block;
+}
+#header #links ul li
+{
+	display: table-cell;
+	float: left;
+	clear: both;
+	width: 100%;
+	width: expression(this.parentNode.clientWidth-26);
+	width: calc(100% - 26px);
+	background-color: #ccccff;
+	border: 1px solid #3465a4;
+	padding: 2px 12px 2px 12px;
+	list-style-type: none;
+}
+#header #links ul a
+{
+	color: black;
+	text-decoration: none;
+}
+#header #links ul a:hover
+{
+	text-decoration: underline;
+}
+#header #links ul a.here
+{
+	font-weight: bold;
+}
+/* Styles for the main contents pane */
+#mainContents
+{
+	font-family: 'Gentium Basic', serif;
+}
+#mainContents .entries
+{
+	display: inline-block;
+	background-color: #eeeeec;
+	border: 1px solid #888a85;
+	float: left;
+	height: 100%;
+	width: expression(document.body.clientWidth-270);
+	width: calc(100% - 270px);
+	margin: 0px 0px 25px 0px;
+}
+#mainContents .entries .heading
+{
+	display: inline-block;
+	font-size: 24pt;
+	font-weight: bold;
+	margin: 10px 10px 10px 10px;
+}
+#mainContents .entries hr
+{
+	margin: 10px 10px 10px 10px;
+}
+#mainContents .entry
+{
+	display: block;
+	background-color: #eeeeec;
+	padding: 10px 10px 10px 10px;
+}
+#mainContents .entry .heading
+{
+	font-size: 24pt;
+	font-weight: bold;
+	margin: 0px 0px 10px 0px;
+	padding: 0px 0px 0px 0px;
+}
+#mainContents .entry .heading a
+{
+	font-size: 24pt;
+	font-weight: bold;
+	color: #000000;
+	margin: 0px 0px 10px 0px;
+	padding: 0px 0px 0px 0px;
+}
+#mainContents .entry .subHeading
+{
+	font-size: 14pt;
+	font-weight: bold;
+	margin: 0px 0px 10px 0px;
+}
+#mainContents .entry .paragraph
+{
+	font-size: 14pt;
+	margin: 10px 0px 20px 0px;
+}
+#mainContents .entry hr
+{
+	margin: 8px 0px 8px 0px;
+}
+#mainContents .entry a
+{
+	display: inline-block;
+	*display: inline;
+	font-size: 14pt;
+	color: #ce5c00;
+	text-decoration: underline;
+	margin: 0px 0px 5px 0px;
+}
+#mainContents .entry .boardList
+{
+	display: table;
+	font-size: 14pt;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+#mainContents .entry .boardList ul
+{
+	display: table-row;
+}
+#mainContents .entry .boardList ul li
+{
+	display: table-cell;
+	*display: inline;
+	padding: 2px 24px 2px 0px;
+	list-style-type: none;
+}
+#mainContents .entry .linksList
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+#mainContents .entry .linksList li
+{
+	list-style-type: none;
+}
+#mainContents .entry .linksList li a
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+#mainContents .entry .contact
+{
+	display: table;
+	font-size: 14pt;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+#mainContents .entry .contact li
+{
+	display: table-row;
+	list-style-type: none;
+	font-size: 14pt;
+	font-weight: bold;
+	margin: 0px 0px 10px 0px;
+	padding: 0px 0px 0px 0px;
+}
+#mainContents .entry .contact ul
+{
+	display: table-row;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+#mainContents .entry .contact ul li
+{
+	display: table-cell;
+	*display: inline;
+	font-weight: normal;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	list-style-type: none;
+}
+#mainContents .entry .contact ul li a
+{
+	color: #ac3a00;
+	text-decoration: underline;
+	margin: 0px 0px 0px 0px;
+}
+#mainContents .entry .events
+{
+	display: table;
+	font-size: 14pt;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+#mainContents .entry .events ul
+{
+	display: table-row;
+}
+#mainContents .entry .events ul li
+{
+	display: table-cell;
+	*display: inline;
+	padding: 2px 24px 2px 0px;
+	list-style-type: none;
+}
+#mainContents .entry .comments
+{
+	display: block;
+	background-color: white;
+	border: 1px solid #555753;
+	margin: 5px -10px -10px -10px;
+	padding: 5px 10px 5px 10px;
+}
+#mainContents .comments
+{
+	font-family: 'Gentium Basic', serif;
+}
+#mainContents .comments .heading
+{
+	font-size: 18pt;
+	font-weight: normal;
+}
+#mainContents .comments a
+{
+	font-size: 12pt;
+	color: black;
+	text-decoration: underline;
+}
+#mainContents .comment .heading
+{
+	font-size: 12pt;
+	font-weight: bold;
+}
+#mainContents .comment .paragraph
+{
+	font-size: 12pt;
+	font-weight: normal;
+}
+/* Styles for the authentication form */
+#auth
+{
+	display: table;
+	margin: 15px 0px 15px 0px;
+}
+#auth .label
+{
+	display: table-cell;
+	*display: inline;
+	font: 14pt 'Gentium Basic', serif;
+	vertical-align: middle;
+	margin: 8px 4px 8px 4px;
+}
+#auth input
+{
+	display: table-cell;
+	*display: inline;
+	font: 15pt 'DejaVu Sans', sans-serif;
+	vertical-align: middle;
+	color: #000000;
+	background-color: #ffffff;
+	border: 1px solid #000000;
+	margin: 8px 8px 8px 8px;
+	width: 200px;
+	border-radius: 5px;
+}
+#auth input[type='submit']
+{
+	display: table-cell;
+	*display: inline;
+	font: 18pt 'DejaVu Sans', sans-serif;
+	color: #000000;
+	background-color: #ccccff;
+	border: 1px solid #3465a4;
+	margin: 8px 8px 8px 8px;
+	width: 125px;
+	border-radius: 10px;
+}
+/* Styles for the donate pane */
+#mainContents .donatePane
+{
+	display: inline-block;
+	background-color: #ccccff;
+	border: 1px solid #5382ba;
+	float: right;
+	height: 300px;
+	width: 250px;
+	margin: 0px 0px 25px 0px;
+}
+#mainContents .donatePane .heading
+{
+	font-size: 18pt;
+	font-weight: bold;
+	text-align: center;
+}
+#mainContents .donatePane .option
+{
+	display: block;
+	background-color: #eeeeec;
+	border: 1px solid #888a85;
+	margin: 5px 5px 5px 5px;
+}
+#mainContents .donatePane .option hr
+{
+	border: 1px solid #555753;
+	width: 96%;
+	clear: both;
+}
+#mainContents .donatePane .option select
+{
+	display: block;
+	font: 15pt 'DejaVu Sans', sans-serif;
+	color: #000000;
+	background-color: #ffffff;
+	border: 1px solid #000000;
+	margin: 8px 4px 8px 4px;
+	padding: 4px 10px 4px -10px;
+	width: 96%;
+	border-radius: 5px;
+}
+#mainContents .donatePane .option input[type='submit']
+{
+	display: block;
+	position: relative;
+	font: 18pt 'DejaVu Sans', sans-serif;
+	color: #000000;
+	background-color: #ccccff;
+	border: 1px solid #3465a4;
+	margin: 8px 4px 8px 4px;
+	padding: 4px 15px 4px 15px;
+	border-radius: 10px;
+	width: 125px;
+	left: expression(this.clientWidth*.50);
+	left: calc(50% - (133px / 2));
+	right: expression(this.clientWidth*.50);
+	right: calc(50% - (133px / 2));
+}
+/* Styles for the footer */
+#footer
+{
+	display: block;
+	clear: both;
+	background-color: #729fcf;
+	border: 1px solid #3465a4;
+	font-family: 'Gentium Basic', serif;
+	padding: 20px 10px 5px 10px;
+}
+#footer .heading
+{
+	display: block;
+	font-size: 18pt;
+}
+#footer hr
+{
+	display: block;
+	clear: both;
+}
+#footer .address
+{
+	display: block;
+	font-size: 14pt;
+	padding: 0px 0px 0px 0px;
+}
+#footer .address li
+{
+	display: table-cell;
+	*display: inline;
+	list-style-type: none;
+	padding: 2px 12px 2px 2px;
+}
+#footer .address li a
+{
+	color: #ac3a00;
+	text-decoration: underline;
+}
+#footer .copyNotices
+{
+	display: block;
+	padding: 0px 0px 0px 0px;
+	list-style: none;
+	font: 12pt 'Gentium Basic', serif;
+}
+#footer .copyNotices li
+{
+	list-style-type: none;
+}
+#footer .copyNotices ul
+{
+	padding: 0px 0px 0px 10px;
+	font-size: 90%;
+}
+.errorMsg
+{
+	background: url('alert.png') no-repeat left top;
+	color: red;
+	height: 20px;
+	padding: 0px 0px 0px 20px;
+}
